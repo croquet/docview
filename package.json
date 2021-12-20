@@ -1,0 +1,33 @@
+{
+  "name": "@croquet/docview",
+  "version": "1.0.0",
+  "description": "Croquet Doc Viewer",
+  "main": "pdf-viewer.js",
+  "scripts": {
+    "start": "parcel index.html -p 9091",
+    "build": "parcel build index.html --public-url ."
+  },
+  "browserslist": [
+    "> 5%"
+  ],
+  "author": "Croquet Corporation",
+  "license": "ISC",
+  "dependencies": {
+    "@croquet/croquet": "^1.0.5"
+  },
+  "externals": {
+    "./web/**/*": false,
+    "./build/**/*": false
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-parcel": "^1.10.1",
+    "eslint-plugin-import": "^2.16.0",
+    "fs-extra": "^10.0.0",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-html-externals": "^0.2.0",
+    "simple-git": "^2.39.0"
+  }
+}
