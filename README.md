@@ -8,6 +8,13 @@ The Croquet DocView allows a group of users to view a PDF file collaboratively. 
 
 The DocView implementation uses [PDF.js](https://mozilla.github.io/pdf.js/) from Mozilla, with some with some customisations to suit docview's purposes. The `pdf.js` directory holds a pre-built version of the customized `pdf.js`. All other code is in pdf-viewer.js, which is loaded from `index.html`.
 
+You need to create a file called `apiKey.js` by copying apyKey.js-example and replace the value with your apiKey obtained from [Croquet Dev Portal](croquet.io/keys):
+
+   ```JavaScript
+   const apiKey = "<insert your apiKey from croquet.io/keys>";
+   export default apiKey;
+   ```
+
 ## Rebuilding PDF.js
 
 If you would like to rebuilt pdf.js.  Follow the steps described below:
