@@ -1065,7 +1065,7 @@ const startSession = () => {
         appId: 'io.croquet.docview',
         name: App.autoSession(),
         apiKey,
-        password: 'dummy-pass',
+        password: App.autoPassword(),
         model: PDFModel,
         view: PDFView,
         tps: 4 // need ticks to handle future messages for lock timeout
